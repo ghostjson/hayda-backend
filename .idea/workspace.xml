@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BlogCreateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BlogUpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/BlogResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Blog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_13_151806_create_blog_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d5f9527-47c6-4712-8490-2033c74888ac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4d5f9527-47c6-4712-8490-2033c74888ac.xml" afterDir="false" />
+    <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="added blog CRUD">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/LoginRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/SignupRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jwt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/auth_routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/blog_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/blog_routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +139,9 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/vendor/browner12/helpers" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kCYGnsQAp7btLdn9X9fxF53b3e" />
@@ -167,7 +177,12 @@
       <workItem from="1605205950087" duration="3552000" />
       <workItem from="1605238999346" duration="1582000" />
       <workItem from="1605265158825" duration="714000" />
-      <workItem from="1605280396170" duration="3104000" />
+      <workItem from="1605280396170" duration="4224000" />
+      <workItem from="1605439202256" duration="235000" />
+      <workItem from="1605623111953" duration="794000" />
+      <workItem from="1605708734510" duration="1970000" />
+      <workItem from="1605803781445" duration="2161000" />
+      <workItem from="1606376139956" duration="1853000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>
@@ -183,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605280420045</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added blog CRUD">
+      <created>1605285089976</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605285089976</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +214,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added healthhub api" />
-    <option name="LAST_COMMIT_MESSAGE" value="added healthhub api" />
+    <MESSAGE value="added blog CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="added blog CRUD" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605206328915">
@@ -203,10 +226,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="451" y="180" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1605206450507" />
-    <state x="2081" y="0" key="CommitChangelistDialog2" timestamp="1605280419232">
+    <state x="2081" y="0" key="CommitChangelistDialog2" timestamp="1605803940377">
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
-    <state x="2081" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1605280419232" />
+    <state x="2081" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1605803940377" />
     <state x="496" y="71" key="FileChooserDialogImpl" timestamp="1605206323881">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -219,14 +242,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="557" y="312" key="NewPhpFileDialog/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1605206585130" />
-    <state x="2092" y="26" key="Vcs.Push.Dialog.v2" timestamp="1605265266643">
+    <state x="2092" y="26" key="Vcs.Push.Dialog.v2" timestamp="1605285094194">
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
-    <state x="2092" y="26" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1605265266643" />
-    <state x="2227" y="-1" width="840" height="914" key="search.everywhere.popup" timestamp="1605284412711">
+    <state x="2092" y="26" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1605285094194" />
+    <state x="2227" y="-1" width="840" height="914" key="search.everywhere.popup" timestamp="1606377951008">
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1605206597529" />
-    <state x="2227" y="-1" width="840" height="914" key="search.everywhere.popup/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1605284412711" />
+    <state x="2227" y="-1" width="840" height="914" key="search.everywhere.popup/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1606377951008" />
   </component>
 </project>
