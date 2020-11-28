@@ -13,6 +13,7 @@ use Tymon\JWTAuth\Contracts\JWTSubject;
  * @property mixed|string password
  * @property mixed|string name
  * @property mixed|string role
+ * @method static create(array $validated)
  */
 class User extends Authenticatable implements JWTSubject
 {
@@ -27,6 +28,7 @@ class User extends Authenticatable implements JWTSubject
         'name',
         'email',
         'password',
+        'role'
     ];
 
     /**

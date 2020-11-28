@@ -4,10 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\SignupRequest;
-use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Log;
 
 class AuthController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')
+            ->only(['logout']);
+    }
+
     public function login(LoginRequest $request)
     {
         if(!$token = auth()->attempt($request->validated())){
@@ -23,9 +30,20 @@ class AuthController extends Controller
         return respond('Successfully logged out');
     }
 
-    public function signup(SignupRequest $request)
+    public function register(SignupRequest $request)
     {
-        // pass
+        $form = $request->validated();
+        $form['role'] = 'user';
+        try {
+            User::create($form);
+            if(!$token = auth()->attempt(['email' => $form['email'], 'password' => $form['password']])){
+                return respond('Unauthorized', 401);
+            }
+            return $this->respondWithToken($token);
+        }catch(\Exception $e){
+            Log::error($e);
+            return respond('Error in registration', 422);
+        }
     }
 
     protected function respondWithToken($token)
