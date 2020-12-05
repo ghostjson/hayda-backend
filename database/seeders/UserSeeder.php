@@ -19,6 +19,7 @@ class UserSeeder extends Seeder
         $user->password = '17291234';
         $user->name = 'admin';
         $user->role = 'admin';
+        $user->subscription = 1;
         $user->save();
     }
 }

@@ -15,4 +15,9 @@ class Blog extends Model
     protected $guarded = [];
     protected $table = 'blog';
 
+    public function getAuthorAttribute($value)
+    {
+        return User::find($value);
+    }
+
 }

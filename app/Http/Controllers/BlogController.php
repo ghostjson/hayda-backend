@@ -17,8 +17,9 @@ class BlogController extends Controller
 
     public function create(BlogCreateRequest $request)
     {
+        $request->merge(['author' => auth()->id()]);
         try {
-            $blog = Blog::create($request->validated());
+            $blog = Blog::create($request->all());
             return respondWithObject('Successfully updated', $blog, 200);
         }catch(\Exception $exception){
             Log::error($exception);

@@ -34,6 +34,8 @@ class AuthController extends Controller
     {
         $form = $request->validated();
         $form['role'] = 'user';
+        $form['subscriptionController'] = 'Basic: free';
+
         try {
             User::create($form);
             if(!$token = auth()->attempt(['email' => $form['email'], 'password' => $form['password']])){
