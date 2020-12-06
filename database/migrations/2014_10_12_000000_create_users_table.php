@@ -21,6 +21,9 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('role');
             $table->bigInteger('subscription')->unsigned();
+
+            $table->string('stripe_customer_id')->unique()->default(1);
+
             $table->rememberToken();
             $table->timestamps();
         });

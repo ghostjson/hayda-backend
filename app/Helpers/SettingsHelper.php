@@ -10,7 +10,7 @@ if (!function_exists('settings')) {
      */
     function settings(string $key) : string
     {
-        return \App\Models\Setting::where('key', $key)->first()->pluck('value');
+        return \App\Models\Setting::where('key', $key)->first()->value;
     }
 }
 

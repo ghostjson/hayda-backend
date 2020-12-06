@@ -4,15 +4,22 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\SignupRequest;
+use App\Models\Subscription;
 use App\Models\User;
+use App\Modules\StripeTrait;
 use Illuminate\Support\Facades\Log;
 
 class AuthController extends Controller
 {
+    use StripeTrait;
+
     public function __construct()
     {
+
         $this->middleware('auth')
             ->only(['logout']);
+
+        $this->stripe_init();
     }
 
     public function login(LoginRequest $request)
@@ -32,12 +39,26 @@ class AuthController extends Controller
 
     public function register(SignupRequest $request)
     {
+
         $form = $request->validated();
         $form['role'] = 'user';
-        $form['subscriptionController'] = 'Basic: free';
+        $form['subscription'] = Subscription::where('name', 'Free')->first()->id;
 
         try {
-            User::create($form);
+
+            $respond = $this->createCustomer([
+                'email' => $form['email'],
+                'name' => $form['name'],
+                'metadata' => [
+                    'Subscription' => 'Free'
+                ]
+            ]);
+
+            if(!$respond) return respond('Error in creating stripe customer');
+
+            $form['stripe_customer_id'] = $respond->id;
+            $user = User::create($form);
+
             if(!$token = auth()->attempt(['email' => $form['email'], 'password' => $form['password']])){
                 return respond('Unauthorized', 401);
             }
