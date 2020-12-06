@@ -18,6 +18,8 @@ class CreateSubscriptionsTable extends Migration
             $table->string('name');
             $table->string('price');
             $table->json('features');
+            $table->string('stripe_id')->nullable();
+            $table->string('stripe_price_id')->nullable();
             $table->timestamps();
         });
     }

@@ -26,4 +26,53 @@ trait StripeTrait{
         }
     }
 
+    public function createProduct($name)
+    {
+        return $this->stripe->products->create([
+            'name' => $name
+        ]);
+    }
+
+    public function listProducts()
+    {
+        return $this->stripe->products->all();
+    }
+
+    public function deactivateProducts()
+    {
+        foreach ($this->listProducts() as $product){
+            $this->stripe->products->update($product->id, [
+                'active' => false
+            ]);
+        }
+
+    }
+
+    public function createPrice($product_id, $price)
+    {
+
+        return $this->stripe->prices->create([
+            'unit_amount' => $price * 100,
+            'currency' => 'usd',
+            'recurring' => ['interval' => 'month'],
+            'product' => $product_id
+        ]);
+
+    }
+
+
+    public function updatePrice($price_id,$product_id, $price)
+    {
+        $this->stripe->prices->update($price_id, [
+            'active' => false
+        ]);
+
+        return $this->stripe->prices->create([
+            'unit_amount' => $price * 100,
+            'currency' => 'usd',
+            'recurring' => ['interval' => 'month'],
+            'product' => $product_id
+        ])->id;
+    }
+
 }

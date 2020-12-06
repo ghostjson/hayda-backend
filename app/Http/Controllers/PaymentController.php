@@ -24,7 +24,6 @@ class PaymentController extends Controller
         try {
             return $this->stripe->balance->retrieve();
         } catch (ApiErrorException $e) {
-            dd($e);
             Log::error($e);
             return respond('Error getting balance');
         }
