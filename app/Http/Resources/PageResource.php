@@ -14,6 +14,7 @@ class PageResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return parent::toArray($request) +
+            ['link' => settings('web_app_url') . '/pages/' . $this->id];
     }
 }

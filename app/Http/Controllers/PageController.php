@@ -6,6 +6,7 @@ use App\Http\Requests\CreatePageRequest;
 use App\Http\Requests\PageUpdateRequest;
 use App\Http\Resources\PageResource;
 use App\Models\Page;
+use Exception;
 use http\Env\Request;
 use Illuminate\Support\Facades\Log;
 
@@ -22,7 +23,7 @@ class PageController extends Controller
         try {
             $page = Page::create($request->all());
             return respondWithObject('Successfully updated', $page, 200);
-        }catch(\Exception $exception){
+        }catch(Exception $exception){
             Log::error($exception);
             return respond('Server Error', 500);
         }
@@ -38,7 +39,7 @@ class PageController extends Controller
         try {
             $page->delete();
             return respond('Successfully deleted', 200);
-        }catch(\Exception $exception){
+        }catch(Exception $exception){
             Log::error($exception);
             return respond('Server Error', 500);
         }
@@ -49,7 +50,7 @@ class PageController extends Controller
         try {
             $page->update($request->validated());
             return respondWithObject('Successfully updated', $page);
-        }catch(\Exception $exception){
+        }catch(Exception $exception){
             Log::error($exception);
             return respond('Server Error', 500);
         }

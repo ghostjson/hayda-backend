@@ -23,4 +23,5 @@ class Page extends Model
     {
         return date('d-m-Y', strtotime($value));
     }
+
 }
