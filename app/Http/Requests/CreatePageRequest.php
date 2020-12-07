@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class BlogCreateRequest extends FormRequest
+class CreatePageRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,6 +13,7 @@ class BlogCreateRequest extends FormRequest
      */
     public function authorize()
     {
+
         return true;
     }
 

@@ -27,6 +27,7 @@ class BlogUpdateRequest extends FormRequest
             'image'=> 'nullable',
             'title'=> 'nullable',
             'content'=> 'nullable',
+            'category' => 'nullable'
         ];
     }
 }

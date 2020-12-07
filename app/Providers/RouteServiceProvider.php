@@ -58,7 +58,7 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/api/health_hub_routes.php'));
 
-            Route::prefix('api/page-editor')
+            Route::prefix('api/pages')
                 ->middleware('api')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/api/page_editor_routes.php'));

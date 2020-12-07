@@ -6,14 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @method static create(array $validated)
+ * @method static create(array $all)
  */
-class Blog extends Model
+class Page extends Model
 {
     use HasFactory;
 
     protected $guarded = [];
-    protected $table = 'blog';
 
     public function getAuthorAttribute($value)
     {
@@ -24,5 +23,4 @@ class Blog extends Model
     {
         return date('d-m-Y', strtotime($value));
     }
-
 }
