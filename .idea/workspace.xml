@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/SetGoalWeightRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GoalsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GoalsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Weight.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Weight.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_05_091532_create_weight_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_091532_create_weight_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/goals_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/goals_routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +206,7 @@
       <workItem from="1609751015320" duration="4925000" />
       <workItem from="1609831821163" duration="5243000" />
       <workItem from="1609905841494" duration="3662000" />
-      <workItem from="1609949584901" duration="687000" />
+      <workItem from="1609949584901" duration="1345000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>
@@ -311,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609839700216</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="weight api implemented 2">
+      <created>1609950428171</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1609950428171</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +333,8 @@
     <MESSAGE value="commit before chat implementation" />
     <MESSAGE value="chat layout implement" />
     <MESSAGE value="weight api implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="weight api implemented" />
+    <MESSAGE value="weight api implemented 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="weight api implemented 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605206328915">
@@ -350,10 +353,10 @@
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="2264" y="59" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1607323971294" />
-    <state x="2042" y="0" key="CommitChangelistDialog2" timestamp="1609839699263">
+    <state x="2042" y="0" key="CommitChangelistDialog2" timestamp="1609950425826">
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
-    <state x="2042" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1609839699263" />
+    <state x="2042" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1609950425826" />
     <state x="496" y="71" key="FileChooserDialogImpl" timestamp="1605206323881">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
