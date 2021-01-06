@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\AddWeightRequest;
+use App\Http\Requests\SetGoalWeightRequest;
 use App\Models\Weight;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -12,7 +13,7 @@ class GoalsController extends Controller
     public function __construct()
     {
         $this->middleware('auth')->only([
-            'addWeight', 'clearWeight', 'getWeight'
+            'addWeight', 'clearWeight', 'getWeight', 'setGoalWeight'
         ]);
     }
 
@@ -34,6 +35,13 @@ class GoalsController extends Controller
         Weight::add($entry);
 
         return $entry;
+    }
+
+    public function setGoalWeight(SetGoalWeightRequest $request)
+    {
+        Weight::setGoal($request->input('weight'));
+
+        return respond('Goal is set');
     }
 
     public function clearWeight()

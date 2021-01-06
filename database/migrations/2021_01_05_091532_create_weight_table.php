@@ -17,7 +17,8 @@ class CreateWeightTable extends Migration
             $table->id();
             $table->foreignId('user_id');
 
-            $table->text('data');
+            $table->text('data')->nullable();
+            $table->string('goal_weight')->default(0);
 
             $table->timestamps();
         });

@@ -17,10 +17,24 @@ class Weight extends Model
     protected $guarded = [];
 
 
+    public static function setGoal($weight)
+    {
+        Weight::updateOrCreate(
+            ['user_id' => auth()->id()],
+            [
+                'goal_weight' => $weight,
+                'data' => json_encode([])
+            ]
+        );
+    }
+
     public static function getWeight()
     {
-        $weightObj = Weight::where('user_id', auth()->id());
-        return json_decode($weightObj->first()->data);
+        $weightObj = Weight::where('user_id', auth()->id())->first();
+        return [
+            'goal' => $weightObj->goal_weight,
+            'data' => json_decode($weightObj->data)
+        ];
     }
 
     public static function add(array $weight)
@@ -32,7 +46,13 @@ class Weight extends Model
             $data = json_decode($weightObj->first()->data);
         }
 
-        array_push($data, $weight);
+        if(is_null($data)){
+            $data = [$weight];
+        }else{
+            array_push($data, $weight);
+        }
+
+
         Weight::updateOrCreate(
             ['user_id' => auth()->id()],
             ['data' => json_encode($data)]
