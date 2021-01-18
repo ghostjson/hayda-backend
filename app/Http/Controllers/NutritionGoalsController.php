@@ -3,45 +3,45 @@
 namespace App\Http\Controllers;
 
 use App\Http\Middleware\AdminAuthMiddleware;
-use App\Http\Requests\BlogCreateRequest;
-use App\Http\Requests\BlogUpdateRequest;
-use App\Http\Resources\BlogResource;
+use App\Http\Requests\NutritionCreateRequest;
+use App\Http\Requests\NutritionUpdateRequest;
+use App\Http\Resources\NutritionGoalsResource;
 use App\Models\Blog;
+use App\Models\NutritionGoal;
 use Illuminate\Support\Facades\Log;
 
-class BlogController extends Controller
+class NutritionGoalsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware([
-            AdminAuthMiddleware::class
-        ])->only('create', 'update', 'delete');
+        $this->middleware(AdminAuthMiddleware::class)->only([
+            'create', 'destroy', 'update'
+        ]);
     }
 
     public function index()
     {
-        return BlogResource::collection(Blog::all());
+        return NutritionGoalsResource::collection(NutritionGoal::all());
     }
 
-    public function create(BlogCreateRequest $request)
+    public function create(NutritionCreateRequest $request)
     {
         $request->merge(['author' => auth()->id()]);
         try {
-            $blog = Blog::create($request->all());
+            $blog = NutritionGoal::create($request->all());
             return respondWithObject('Successfully updated', $blog, 200);
         }catch(\Exception $exception){
-            dd($exception);
             Log::error($exception);
             return respond('Server Error', 500);
         }
     }
 
-    public function show(Blog $blog)
+    public function show(NutritionGoal $blog)
     {
-        return new BlogResource($blog);
+        return new NutritionGoalsResource($blog);
     }
 
-    public function destroy(Blog $blog)
+    public function destroy(NutritionGoal $blog)
     {
         try {
             $blog->delete();
@@ -52,7 +52,7 @@ class BlogController extends Controller
         }
     }
 
-    public function update(Blog $blog, BlogUpdateRequest $request)
+    public function update(NutritionUpdateRequest $request, NutritionGoal $blog)
     {
         try {
             $blog->update($request->validated());

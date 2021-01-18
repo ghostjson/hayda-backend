@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AdminAuthMiddleware
 {
@@ -16,10 +17,15 @@ class AdminAuthMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        if(auth()->user()->role === 'admin'){
-            return $next($request);
+        if(Auth::check()){
+            if(auth()->user()->role === 'admin'){
+                return $next($request);
+            }else{
+                return respond('Unauthorized', 401);
+            }
         }else{
-            return respond('Unauthorized', 401);
+            respond('Unauthenticated', 401);
         }
+
     }
 }
