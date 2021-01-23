@@ -15,6 +15,7 @@ use Tymon\JWTAuth\Contracts\JWTSubject;
  * @property mixed|string role
  * @property int|mixed subscription
  * @method static create(array $validated)
+ * @method static find($value)
  */
 class User extends Authenticatable implements JWTSubject
 {

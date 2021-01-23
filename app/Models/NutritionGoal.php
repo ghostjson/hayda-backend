@@ -19,4 +19,9 @@ class NutritionGoal extends Model
     {
         return date('d-m-Y', strtotime($value));
     }
+
+    public function getAuthorAttribute($value)
+    {
+        return User::find($value);
+    }
 }
