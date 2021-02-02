@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
                 SettingsSeeder::class,
                 UserSeeder::class,
                 SubscriptionSeeder::class,
+                PageSeeder::class
             ]
         );
     }

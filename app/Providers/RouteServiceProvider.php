@@ -91,10 +91,10 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/api/goals_routes.php'));
 
-            Route::prefix('api/goals/nutrition')
+            Route::prefix('api/page-content')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/api/nutrition_goals_routes.php'));
+                ->group(base_path('routes/api/content_editor_routes.php'));
         });
     }
 
