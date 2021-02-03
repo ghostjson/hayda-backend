@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StatsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/stats.routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PageSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PageSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +230,9 @@
       <workItem from="1612109727322" duration="1550000" />
       <workItem from="1612172788895" duration="2710000" />
       <workItem from="1612188791837" duration="2756000" />
-      <workItem from="1612249917291" duration="3558000" />
+      <workItem from="1612249917291" duration="3604000" />
+      <workItem from="1612281102211" duration="2013000" />
+      <workItem from="1612333140236" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>
@@ -358,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612251825623</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="footer added to page contents">
+      <created>1612257835629</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1612257835629</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +399,8 @@
     <MESSAGE value="fix date format of nutition page" />
     <MESSAGE value="fix date format of nutrition page" />
     <MESSAGE value="page content implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="page content implemented" />
+    <MESSAGE value="footer added to page contents" />
+    <option name="LAST_COMMIT_MESSAGE" value="footer added to page contents" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612024595831">
@@ -406,11 +423,12 @@
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="2264" y="59" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1610461948557" />
-    <state x="138" y="0" key="CommitChangelistDialog2" timestamp="1612251822289">
+    <state x="138" y="0" key="CommitChangelistDialog2" timestamp="1612257832805">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="138" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1612251822289" />
     <state x="2042" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1611503989233" />
+    <state x="138" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1612257832805" />
     <state width="302" height="242" key="DatabaseViewActions_Filter" timestamp="1612251376023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -437,10 +455,10 @@
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="2172" y="159" key="run.anything.popup/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1609839669582" />
-    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1612251977518">
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1612282550611">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1612251977518" />
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1612282550611" />
     <state x="2227" y="-1" width="840" height="914" key="search.everywhere.popup/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1612024355113" />
     <state x="347" y="-1" width="949" height="1035" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1612110976962" />
   </component>

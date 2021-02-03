@@ -16,6 +16,8 @@ use Tymon\JWTAuth\Contracts\JWTSubject;
  * @property int|mixed subscription
  * @method static create(array $validated)
  * @method static find($value)
+ * @method static count()
+ * @method static where(string $string, int $int)
  */
 class User extends Authenticatable implements JWTSubject
 {
