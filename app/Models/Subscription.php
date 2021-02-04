@@ -20,6 +20,8 @@ class Subscription extends Model
 
     protected $guarded = [];
 
+    protected $table = 'subscriptions_info';
+
     protected static function boot()
     {
         parent::boot();

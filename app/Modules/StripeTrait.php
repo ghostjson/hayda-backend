@@ -75,4 +75,20 @@ trait StripeTrait{
         ])->id;
     }
 
+    public function createSession($product)
+    {
+        return $this->stripe->checkout->sessions->create([
+            'success_url' => settings('web_app_url') . '/success',
+            'cancel_url' => settings('web_app_url') . '/cancel',
+            'payment_method_types' => ['card'],
+            'line_items' => [
+                [
+                    'price' => $product,
+                    'quantity' => 1,
+                ],
+            ],
+            'mode' => 'subscription',
+        ]);
+    }
+
 }

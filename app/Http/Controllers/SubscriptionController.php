@@ -40,5 +40,10 @@ class SubscriptionController extends Controller
 
     }
 
+    public function subscribe()
+    {
+
+    }
+
 
 }
