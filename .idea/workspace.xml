@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/UserResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SettingsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/StripeTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/StripeTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/SettingsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/SettingsSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/auth_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/auth_routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/payment_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/payment_routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/settings_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/settings_routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/blog_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/blog_routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/goals_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/goals_routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/nutrition_goals_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/nutrition_goals_routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/page_editor_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/page_editor_routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -410,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613460421116</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="contact details updated">
+      <created>1613466430958</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1613466430958</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +440,8 @@
     <MESSAGE value="stats implemented" />
     <MESSAGE value="theme update" />
     <MESSAGE value="add secondary color" />
-    <option name="LAST_COMMIT_MESSAGE" value="add secondary color" />
+    <MESSAGE value="contact details updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact details updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612024595831">
@@ -462,11 +464,11 @@
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="2264" y="59" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1610461948557" />
-    <state x="2042" y="0" key="CommitChangelistDialog2" timestamp="1613460420234">
+    <state x="2042" y="0" key="CommitChangelistDialog2" timestamp="1613466429251">
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="138" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1612251822289" />
-    <state x="2042" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1613460420234" />
+    <state x="2042" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1613466429251" />
     <state x="138" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1612338867090" />
     <state width="302" height="242" key="DatabaseViewActions_Filter" timestamp="1612251376023">
       <screen x="0" y="0" width="1536" height="824" />
