@@ -17,5 +17,10 @@ class SettingsSeeder extends Seeder
         setSettings('stripe_secret_key', 'sk_test_51HvJkCLtTrjFBbii2UUNq9c2oI7VgEqmWhf1AQcxzoqrJybFIpt6i2uVmta52xTYK1eEqmTNLexf91RWMCIoVu9S00m45gO3RX');
         setSettings('web_app_url', 'http://localhost:8080');
         setSettings('admin_panel_url', 'http://localhost:8081');
+        setSettings('theme', json_encode(
+            [
+                'primary_color' => '#ee2425'
+            ]
+        ));
     }
 }

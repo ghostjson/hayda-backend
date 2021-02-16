@@ -30,4 +30,8 @@ class ContentEditor extends Controller
             return respond('Error updating page content');
         }
     }
+
+    public function theme(){
+        return settings('theme');
+    }
 }

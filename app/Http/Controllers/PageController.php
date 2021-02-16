@@ -55,4 +55,6 @@ class PageController extends Controller
             return respond('Server Error', 500);
         }
     }
+
+
 }
