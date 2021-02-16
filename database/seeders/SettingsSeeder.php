@@ -19,7 +19,8 @@ class SettingsSeeder extends Seeder
         setSettings('admin_panel_url', 'http://localhost:8081');
         setSettings('theme', json_encode(
             [
-                'primary_color' => '#ee2425'
+                'primary_color' => '#ee2425',
+                'secondary_color' => '#0e1d53'
             ]
         ));
     }

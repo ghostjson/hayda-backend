@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="chatbot implemented">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContentEditor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContentEditor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
+    <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/database/seeders/SettingsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/SettingsSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/content_editor_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/content_editor_routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/page_editor_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/page_editor_routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -391,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612334328331</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="theme update">
+      <created>1613459316811</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1613459316811</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +420,8 @@
     <MESSAGE value="page content implemented" />
     <MESSAGE value="footer added to page contents" />
     <MESSAGE value="stats implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="stats implemented" />
+    <MESSAGE value="theme update" />
+    <option name="LAST_COMMIT_MESSAGE" value="theme update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612024595831">
@@ -441,11 +444,11 @@
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="2264" y="59" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1610461948557" />
-    <state x="2042" y="0" key="CommitChangelistDialog2" timestamp="1613457910414">
+    <state x="2042" y="0" key="CommitChangelistDialog2" timestamp="1613459314982">
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="138" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1612251822289" />
-    <state x="2042" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1613457910414" />
+    <state x="2042" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1613459314982" />
     <state x="138" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1612338867090" />
     <state width="302" height="242" key="DatabaseViewActions_Filter" timestamp="1612251376023">
       <screen x="0" y="0" width="1536" height="824" />
@@ -478,11 +481,11 @@
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="2172" y="159" key="run.anything.popup/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1609839669582" />
-    <state x="2227" y="-1" width="840" height="914" key="search.everywhere.popup" timestamp="1613458949187">
+    <state x="2227" y="-1" width="840" height="914" key="search.everywhere.popup" timestamp="1613460127158">
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1612454145300" />
-    <state x="2227" y="-1" width="840" height="914" key="search.everywhere.popup/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1613458949187" />
+    <state x="2227" y="-1" width="840" height="914" key="search.everywhere.popup/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1613460127158" />
     <state x="347" y="-1" width="949" height="1035" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1612341007370" />
   </component>
 </project>
