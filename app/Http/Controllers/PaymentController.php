@@ -12,7 +12,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Stripe\Balance;
 use Stripe\Exception\ApiErrorException;
-use Stripe\StripeClient;
 
 class PaymentController extends Controller
 {
@@ -60,6 +59,8 @@ class PaymentController extends Controller
 
     public function statusUpdate(Request $request)
     {
+        Log::info(json_encode($request->all()));
+//        die;
         try {
             $status = $request->all();
 
@@ -70,6 +71,8 @@ class PaymentController extends Controller
 
                 $user = User::find($payment_session->user_id);
                 $user->subscription = Subscription::where('name', $payment_session->subscription)->first()->id;
+                $user->subscription_id = $status['data']['object']['subscription'];
+
                 $user->save();
 
                 $payment_session->save();
@@ -89,5 +92,15 @@ class PaymentController extends Controller
 
     }
 
+    public function cancelSubscription()
+    {
+        $user = User::find(auth()->id());
 
+        $user->subscription = 1;
+        $user->save();
+
+        $this->cancel($user->subscription_id);
+
+        return respond('Successfully cancelled');
+    }
 }

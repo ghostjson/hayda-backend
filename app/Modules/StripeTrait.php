@@ -91,4 +91,11 @@ trait StripeTrait{
         ]);
     }
 
+    public function cancel(string $subscription_id)
+    {
+        $this->stripe->subscriptions->cancel(
+            $subscription_id, []
+        );
+    }
+
 }

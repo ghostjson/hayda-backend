@@ -29,4 +29,9 @@ class SettingsController extends Controller
 
         return respond('Update successfully');
     }
+
+    public function getContactEmail()
+    {
+        return settings('website_contact_email');
+    }
 }

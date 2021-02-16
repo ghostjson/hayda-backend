@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\SignupRequest;
+use App\Http\Resources\UserResource;
 use App\Models\Subscription;
 use App\Models\User;
 use App\Modules\StripeTrait;
@@ -69,13 +70,18 @@ class AuthController extends Controller
         }
     }
 
+    public function getUser()
+    {
+        return new UserResource(auth()->user());
+    }
+
     protected function respondWithToken($token)
     {
         return response()->json([
             'access_token' => $token,
             'token_type' => 'bearer',
             'expires_in' => 3600 * 60,
-            'user' => auth()->user()
+            'user' => new UserResource(auth()->user())
         ]);
     }
 }

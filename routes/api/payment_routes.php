@@ -8,6 +8,7 @@ Route::middleware('auth')->group(function (){
     Route::post('checkout', [PaymentController::class, 'checkout']);
     Route::get('token', [PaymentController::class, 'stripeToken']);
     Route::get('balance', [PaymentController::class, 'getBalance']);
+    Route::delete('cancel', [PaymentController::class, 'cancelSubscription']);
 });
 
 Route::post('status', [PaymentController::class, 'statusUpdate']);

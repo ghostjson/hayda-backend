@@ -22,6 +22,8 @@ class CreateUsersTable extends Migration
             $table->string('role');
             $table->bigInteger('subscription')->unsigned();
 
+            $table->text('subscription_id')->nullable();
+
 //            $table->string('session_id')->nullable();
 //            $table->string('stripe_customer_id')->unique()->default(1);
 

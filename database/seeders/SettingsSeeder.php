@@ -23,5 +23,7 @@ class SettingsSeeder extends Seeder
                 'secondary_color' => '#0e1d53'
             ]
         ));
+
+        setSettings('website_contact_email', 'example@example.com');
     }
 }
