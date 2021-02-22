@@ -19,6 +19,7 @@ class PageContent extends Model
 
     public function getContentAttribute($value)
     {
+
         return json_decode($value);
     }
 }
