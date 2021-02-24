@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/PageContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/PageContent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/PageSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PageSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,7 +241,10 @@
       <workItem from="1612449535342" duration="1612000" />
       <workItem from="1613893079738" duration="1313000" />
       <workItem from="1613927990288" duration="362000" />
-      <workItem from="1614018118744" duration="3509000" />
+      <workItem from="1614018118744" duration="4030000" />
+      <workItem from="1614187888827" duration="13000" />
+      <workItem from="1614191586569" duration="1586000" />
+      <workItem from="1614195125387" duration="620000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>
@@ -419,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613466629494</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="terms page implemented">
+      <created>1614025350788</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1614025350788</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +459,8 @@
     <MESSAGE value="add secondary color" />
     <MESSAGE value="contact details updated" />
     <MESSAGE value="update authorization" />
-    <option name="LAST_COMMIT_MESSAGE" value="update authorization" />
+    <MESSAGE value="terms page implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="terms page implemented" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612024595831">
@@ -469,11 +479,11 @@
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="2264" y="59" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1610461948557" />
-    <state x="2042" y="0" key="CommitChangelistDialog2" timestamp="1613466628003">
+    <state x="2042" y="0" key="CommitChangelistDialog2" timestamp="1614025348882">
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="138" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1612251822289" />
-    <state x="2042" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1613466628003" />
+    <state x="2042" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1614025348882" />
     <state x="138" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1612338867090" />
     <state width="302" height="242" key="DatabaseViewActions_Filter" timestamp="1612251376023">
       <screen x="0" y="0" width="1536" height="824" />
@@ -497,11 +507,12 @@
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="2172" y="159" key="run.anything.popup/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1609839669582" />
-    <state x="2227" y="-1" width="840" height="914" key="search.everywhere.popup" timestamp="1614024269715">
-      <screen x="1920" y="0" width="1360" height="728" />
+    <state x="2227" y="-1" width="840" height="902" key="search.everywhere.popup" timestamp="1614192038532">
+      <screen x="1920" y="0" width="1360" height="718" />
     </state>
     <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1612454145300" />
     <state x="2227" y="-1" width="840" height="914" key="search.everywhere.popup/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1614024269715" />
     <state x="347" y="-1" width="949" height="1035" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1612341007370" />
+    <state x="2227" y="-1" width="840" height="902" key="search.everywhere.popup/1920.0.1360.718/0.0.1536.824@1920.0.1360.718" timestamp="1614192038532" />
   </component>
 </project>
