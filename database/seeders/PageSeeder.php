@@ -38,7 +38,7 @@ class PageSeeder extends Seeder
         $social->name = 'social';
         $social->content = '{"facebook":"#","twitter":"#","google":"#","pininterest":"#","vimeo":"#","linkedin":"#","dribbble":"#","youtube":"#","reddit":"#"}';
         $social->save();
-
+    
     }
 }
 

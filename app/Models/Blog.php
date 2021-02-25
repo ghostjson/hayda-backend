@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * @method static create(array $validated)
  * @method static count()
+ * @method static where(string $string, string $string1, string $string2)
  */
 class Blog extends Model
 {
