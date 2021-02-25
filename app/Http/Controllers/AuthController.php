@@ -57,10 +57,11 @@ class AuthController extends Controller
 
             if(!$respond) return respond('Error in creating stripe customer');
 
-            $form['stripe_customer_id'] = $respond->id;
+            $form['stripe_id'] = $respond->id;
+
             $user = User::create($form);
 
-            if(!$token = auth()->attempt(['email' => $form['email'], 'password' => $form['password']])){
+            if(!$token = auth()->login($user)){
                 return respond('Unauthorized', 401);
             }
             return $this->respondWithToken($token);
