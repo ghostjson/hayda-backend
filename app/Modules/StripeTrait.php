@@ -54,7 +54,7 @@ trait StripeTrait{
         return $this->stripe->prices->create([
             'unit_amount' => $price * 100,
             'currency' => 'usd',
-            'recurring' => ['interval' => 'month'],
+            'recurring' => ['interval' => 'yearly'],
             'product' => $product_id
         ]);
 

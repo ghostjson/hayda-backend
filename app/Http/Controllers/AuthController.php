@@ -42,6 +42,8 @@ class AuthController extends Controller
     {
 
         $form = $request->validated();
+
+
         $form['role'] = 'user';
         $form['subscription'] = Subscription::where('name', 'Free')->first()->id;
 

@@ -1,5 +1,6 @@
 <?php
 
+
 use App\Http\Controllers\GoalsController;
 use App\Http\Controllers\WorkoutController;
 use Illuminate\Support\Facades\Route;

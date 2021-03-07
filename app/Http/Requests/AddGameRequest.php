@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class SignupRequest extends FormRequest
+class AddGameRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,14 +24,8 @@ class SignupRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => 'required',
-            'password' => 'required',
-            'name' => 'required',
-            'zip_code' => 'required',
-            'height' => 'required',
-            'weight' => 'required',
-            'age' => 'required',
-            'gender' => 'required'
+            'title'=> 'required',
+            'link' => 'required'
         ];
     }
 }

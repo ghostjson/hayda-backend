@@ -77,9 +77,7 @@ class RouteServiceProvider extends ServiceProvider
                 ->middleware('api')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/api/payment_routes.php'));
-//            Route::middleware('web')
-//                ->namespace($this->namespace)
-//                ->group(base_path('routes/web.php'));
+
 
             Route::prefix('api/chat')
                 ->middleware('api')
@@ -99,7 +97,17 @@ class RouteServiceProvider extends ServiceProvider
             Route::prefix('api/stats')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/api/stats.routes.php'));
+                ->group(base_path('routes/api/stats_routes.php'));
+
+            Route::prefix('api/games')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/api/games_routes.php'));
+
+            Route::prefix('api/podcasts')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/api/podcasts_routes.php'));
         });
     }
 

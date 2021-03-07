@@ -24,6 +24,12 @@ class CreateUsersTable extends Migration
 
             $table->text('subscription_id')->nullable();
 
+            $table->string('zip_code')->nullable();
+            $table->string('weight')->nullable();
+            $table->string('height')->nullable();
+            $table->string('age')->nullable();
+            $table->string('gender')->nullable();
+
 //            $table->string('session_id')->nullable();
 //            $table->string('stripe_customer_id')->unique()->default(1);
 
