@@ -25,5 +25,9 @@ class SettingsSeeder extends Seeder
         ));
 
         setSettings('website_contact_email', 'example@example.com');
+        setSettings('app_urls', json_encode([
+            'android' => '#',
+            'ios' => '#'
+        ]));
     }
 }

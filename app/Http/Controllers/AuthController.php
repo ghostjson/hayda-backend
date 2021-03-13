@@ -7,6 +7,7 @@ use App\Http\Requests\SignupRequest;
 use App\Http\Resources\UserResource;
 use App\Models\Subscription;
 use App\Models\User;
+use App\Models\Weight;
 use App\Modules\StripeTrait;
 use Illuminate\Support\Facades\Log;
 
@@ -38,17 +39,27 @@ class AuthController extends Controller
         return respond('Successfully logged out');
     }
 
+
+    /**
+     * Register a user
+     * @param SignupRequest $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function register(SignupRequest $request)
     {
 
+        // set data form request to $form variable
         $form = $request->validated();
 
 
+        // add role = user
         $form['role'] = 'user';
+        // add subscription to free
         $form['subscription'] = Subscription::where('name', 'Free')->first()->id;
 
         try {
 
+            // try to create a stripe customer
             $respond = $this->createCustomer([
                 'email' => $form['email'],
                 'name' => $form['name'],
@@ -57,12 +68,23 @@ class AuthController extends Controller
                 ]
             ]);
 
-            if(!$respond) return respond('Error in creating stripe customer');
+            // if couldn't create
+            if(!$respond) return respond('Error in creating stripe customer', 500);
 
+            // set stripe id
             $form['stripe_id'] = $respond->id;
 
+            // create user using $form
             $user = User::create($form);
 
+            // create a weight field for the created user
+            Weight::create([
+                'user_id' => $user->id,
+                'goal' => $user->weight - 20,
+                'data' => json_encode([])
+            ]);
+
+            // set $token
             if(!$token = auth()->login($user)){
                 return respond('Unauthorized', 401);
             }

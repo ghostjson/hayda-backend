@@ -9,3 +9,4 @@ Route::middleware('admin.auth')->group(function (){
 });
 
 Route::get('/contact-email', [SettingsController::class, 'getContactEmail']);
+Route::get('/app-urls', [SettingsController::class, 'getAppURLs']);

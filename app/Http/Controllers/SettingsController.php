@@ -34,4 +34,9 @@ class SettingsController extends Controller
     {
         return settings('website_contact_email');
     }
+
+    public function getAppURLs()
+    {
+       return settings('app_urls');
+    }
 }
