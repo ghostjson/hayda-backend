@@ -100,6 +100,11 @@ class AuthController extends Controller
         return new UserResource(auth()->user());
     }
 
+    public function uploadImage()
+    {
+
+    }
+
     protected function respondWithToken($token)
     {
         return response()->json([

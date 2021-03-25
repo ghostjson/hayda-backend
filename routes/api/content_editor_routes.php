@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['auth', 'admin.auth'])->group(function () {
     Route::get('/', [ContentEditor::class, 'index']);
     Route::post('{name}', [ContentEditor::class, 'putPage']);
+
+
 });
 Route::get('/theme', [ContentEditor::class, 'theme']);
 Route::get('{page}', [ContentEditor::class, 'getPage']);
