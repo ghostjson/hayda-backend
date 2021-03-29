@@ -1,0 +1,1 @@
+{"intents":[{"name":"Greet","questions":["Hi","Hello","How are you?","Are you there?"],"answers":["Hello","Hi","How can I help you?","Hey there","Nice to meet you. How can I help you?"]},{"name":"bye","questions":["bye","goodbye"],"answers":["Bye","Nice to meet you.","Goodbye"]}]}

@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="fix workout routine error&#10;fix subscription period issue">
-      <change afterPath="$PROJECT_DIR$/test/api" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ChatbotPutRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/Chatbot-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/chat.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/data/chats.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/data/chats_bak.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/auth_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/auth_routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/common_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/common_routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/content_editor_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/content_editor_routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChatController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/chat_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/chat_routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,13 +184,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/routes/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/chatbot/data" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\workspace\freelance\Hayda\source code\backend\chatbot\data" />
       <recent name="E:\workspace\workspace\freelance\Hayda\source code\backend\routes\api" />
     </key>
   </component>
@@ -271,6 +275,11 @@
       <workItem from="1615301713128" duration="1962000" />
       <workItem from="1615657332544" duration="5044000" />
       <workItem from="1616645234263" duration="4844000" />
+      <workItem from="1616741171679" duration="11000" />
+      <workItem from="1616925535851" duration="3755000" />
+      <workItem from="1616932365041" duration="5296000" />
+      <workItem from="1617006951889" duration="2508000" />
+      <workItem from="1617033251929" duration="1170000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>

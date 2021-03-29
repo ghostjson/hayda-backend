@@ -3,4 +3,7 @@
 use App\Http\Controllers\ChatController;
 use Illuminate\Support\Facades\Route;
 
-Route::match(['get', 'post'], '/chat-bot', [ChatController::class, 'run']);
+Route::post('/', [ChatController::class, 'run']);
+
+Route::get('/intents', [ChatController::class, 'getIntents']);
+Route::post('/intents', [ChatController::class, 'putIntents']);
