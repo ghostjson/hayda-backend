@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="fix workout routine error&#10;fix subscription period issue">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ChatbotPutRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot/Chatbot-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot/chat.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot/data/chats.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot/data/chats_bak.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+    <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChatController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/chat_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/chat_routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/data/chats.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/chats.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/data/chats_bak.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/chats_bak.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +273,7 @@
       <workItem from="1616925535851" duration="3755000" />
       <workItem from="1616932365041" duration="5296000" />
       <workItem from="1617006951889" duration="2508000" />
-      <workItem from="1617033251929" duration="1170000" />
+      <workItem from="1617033251929" duration="2096000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>
@@ -526,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615662996419</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="chatbot implemented">
+      <created>1617037076543</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1617037076543</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +535,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="stipe implemented partially" />
     <MESSAGE value="subscription update with stripe implemented" />
     <MESSAGE value="pages implemented" />
     <MESSAGE value="commit before chat implementation" />
@@ -559,6 +559,7 @@
     <MESSAGE value="our team section added to admin panel" />
     <MESSAGE value="fix subscription period issue" />
     <MESSAGE value="fix workout routine error&#10;fix subscription period issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix workout routine error&#10;fix subscription period issue" />
+    <MESSAGE value="chatbot implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="chatbot implemented" />
   </component>
 </project>
