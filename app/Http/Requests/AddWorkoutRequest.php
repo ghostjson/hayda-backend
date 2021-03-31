@@ -24,7 +24,8 @@ class AddWorkoutRequest extends FormRequest
     public function rules()
     {
         return [
-            'dates' => 'required'
+            'dates' => 'required',
+            'duration' => 'required'
         ];
     }
 }

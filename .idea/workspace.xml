@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d5f9527-47c6-4712-8490-2033c74888ac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4d5f9527-47c6-4712-8490-2033c74888ac.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WorkoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WorkoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/AddWorkoutRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/AddWorkoutRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/WorkoutResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/WorkoutResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/data/chats.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/chats.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/data/chats_bak.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/chats_bak.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_18_101245_create_workouts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_18_101245_create_workouts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/PageSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PageSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/common_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/common_routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +279,9 @@
       <workItem from="1616925535851" duration="3755000" />
       <workItem from="1616932365041" duration="5296000" />
       <workItem from="1617006951889" duration="2508000" />
-      <workItem from="1617033251929" duration="2096000" />
+      <workItem from="1617033251929" duration="3615000" />
+      <workItem from="1617186956234" duration="18000" />
+      <workItem from="1617208392050" duration="5191000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>
@@ -527,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617037076543</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="chatbot update">
+      <created>1617038705810</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1617038705810</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +550,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="subscription update with stripe implemented" />
     <MESSAGE value="pages implemented" />
     <MESSAGE value="commit before chat implementation" />
     <MESSAGE value="chat layout implement" />
@@ -560,6 +574,7 @@
     <MESSAGE value="fix subscription period issue" />
     <MESSAGE value="fix workout routine error&#10;fix subscription period issue" />
     <MESSAGE value="chatbot implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="chatbot implemented" />
+    <MESSAGE value="chatbot update" />
+    <option name="LAST_COMMIT_MESSAGE" value="chatbot update" />
   </component>
 </project>

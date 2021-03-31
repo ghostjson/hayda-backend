@@ -38,7 +38,8 @@ class WorkoutController extends Controller
     public function add(AddWorkoutRequest $request)
     {
          $this->workout->update([
-                'dates' => $request->input('dates')
+                'dates' => $request->input('dates'),
+                'duration' => $request->input('duration')
             ]);
 
          return new WorkoutResource($this->workout);

@@ -11,6 +11,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @property mixed user_id
  * @property mixed created_at
  * @property mixed updated_at
+ * @property mixed duration
  */
 class WorkoutResource extends JsonResource
 {
@@ -26,6 +27,7 @@ class WorkoutResource extends JsonResource
             'id' => $this->id,
             'meta' => json_decode($this->meta),
             'dates' => json_decode($this->dates),
+            'duration' => json_decode($this->duration),
             'user_id' => $this->user_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at

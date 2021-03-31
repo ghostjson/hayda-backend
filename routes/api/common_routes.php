@@ -15,6 +15,6 @@ Route::post('/search', [SearchController::class, 'search']);
 
 Route::middleware('admin.auth')->group(function () {
     Route::post('/file-upload', function (Request $request) {
-        return URL::to('/') . Storage::url($request->file('file')->store('public'));
+        return config('app.url') . Storage::url($request->file('file')->store('public'));
     });
 });

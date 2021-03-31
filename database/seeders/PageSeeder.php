@@ -26,7 +26,7 @@ class PageSeeder extends Seeder
 
         $footer = new PageContent();
         $footer->name = 'footer';
-        $footer->content = '{"who_we_are":"Built with love in Some address, Texas, USA All rights reserved. Copyright \u00a9 2020. HAYDA.","link_heading":"SHOP","links":[{"name":"Category 1","link":"#"},{"name":"Category 2","link":"#"},{"name":"Category 3","link":"#"},{"name":"Category 4","link":"#"},{"name":null,"link":"#"}]}';
+        $footer->content = '{"who_we_are":"Built with love in Some address, Texas, USA All rights reserved. Copyright \u00a9 2021. HAYDA.","link_heading":"SHOP","links":[{"name":"Category 1","link":"#"},{"name":"Category 2","link":"#"},{"name":"Category 3","link":"#"},{"name":"Category 4","link":"#"},{"name":null,"link":"#"}]}';
         $footer->save();
 
         $terms = new PageContent();
