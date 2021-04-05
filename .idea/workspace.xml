@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d5f9527-47c6-4712-8490-2033c74888ac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4d5f9527-47c6-4712-8490-2033c74888ac.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WorkoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WorkoutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/AddWorkoutRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/AddWorkoutRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/WorkoutResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/WorkoutResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Workout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Workout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_18_101245_create_workouts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_18_101245_create_workouts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +277,7 @@
       <workItem from="1617208392050" duration="6460000" />
       <workItem from="1617292439327" duration="1202000" />
       <workItem from="1617348157841" duration="648000" />
-      <workItem from="1617631102810" duration="3430000" />
+      <workItem from="1617631102810" duration="4706000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>
@@ -550,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617215931248</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="1) Workout routine reset button fixed&#10;2) Workout routine met goal implemented.&#10;3) About us image not showing error fixed.">
+      <created>1617635450422</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1617635450422</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,8 +560,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit before chat implementation" />
-    <MESSAGE value="chat layout implement" />
     <MESSAGE value="weight api implemented" />
     <MESSAGE value="weight api implemented 2" />
     <MESSAGE value="workout implemented" />
@@ -583,6 +583,8 @@
     <MESSAGE value="chatbot implemented" />
     <MESSAGE value="chatbot update" />
     <MESSAGE value="add duration to workout table&#10;fix uploaded image not showing error on production" />
-    <option name="LAST_COMMIT_MESSAGE" value="add duration to workout table&#10;fix uploaded image not showing error on production" />
+    <MESSAGE value="1) Email suggestion on height fixed&#10;2) Workout routine reset button fixed&#10;3) Workout routine met goal implemented.&#10;4) About us image not showing error fixed.&#10;5) Blog not showing fixed." />
+    <MESSAGE value="1) Workout routine reset button fixed&#10;2) Workout routine met goal implemented.&#10;3) About us image not showing error fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="1) Workout routine reset button fixed&#10;2) Workout routine met goal implemented.&#10;3) About us image not showing error fixed." />
   </component>
 </project>

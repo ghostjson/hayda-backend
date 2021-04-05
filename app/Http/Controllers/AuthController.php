@@ -80,7 +80,7 @@ class AuthController extends Controller
             // create a weight field for the created user
             Weight::create([
                 'user_id' => $user->id,
-                'goal' => $user->weight - 20,
+                'goal_weight' => $user->weight - 20,
                 'data' => json_encode([])
             ]);
 
