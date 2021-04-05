@@ -25,7 +25,8 @@ class AddWorkoutRequest extends FormRequest
     {
         return [
             'dates' => 'required',
-            'duration' => 'required'
+            'duration' => 'required',
+            'met_goal' => 'required'
         ];
     }
 }

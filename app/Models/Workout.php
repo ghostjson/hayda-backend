@@ -25,4 +25,7 @@ class Workout extends Model
         $this->attributes['dates'] = json_encode($value);
     }
 
+    public function setMetGoalAttribute($value){
+        $this->attributes['met_goal'] = json_encode($value);
+    }
 }

@@ -39,7 +39,8 @@ class WorkoutController extends Controller
     {
          $this->workout->update([
                 'dates' => $request->input('dates'),
-                'duration' => $request->input('duration')
+                'duration' => $request->input('duration'),
+                'met_goal' => $request->input('met_goal')
             ]);
 
          return new WorkoutResource($this->workout);

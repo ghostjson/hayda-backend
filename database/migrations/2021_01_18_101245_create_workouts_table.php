@@ -21,6 +21,8 @@ class CreateWorkoutsTable extends Migration
 
             $table->text('duration')->nullable();
 
+            $table->json('met_goal')->default('[]');
+
             $table->bigInteger('user_id');
 
             $table->timestamps();

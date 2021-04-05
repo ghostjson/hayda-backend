@@ -2043,20 +2043,24 @@ stripe_status</ColNames>
       <Position>4</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="655" parent="187" name="user_id">
+    <column id="655" parent="187" name="met_goal">
       <Position>5</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="656" parent="187" name="user_id">
+      <Position>6</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="656" parent="187" name="created_at">
-      <Position>6</Position>
-      <DataType>datetime|0s</DataType>
-    </column>
-    <column id="657" parent="187" name="updated_at">
+    <column id="657" parent="187" name="created_at">
       <Position>7</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <key id="658" parent="187">
+    <column id="658" parent="187" name="updated_at">
+      <Position>8</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <key id="659" parent="187">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>

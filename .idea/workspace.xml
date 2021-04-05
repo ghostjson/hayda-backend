@@ -10,10 +10,8 @@
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WorkoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WorkoutController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/AddWorkoutRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/AddWorkoutRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Resources/WorkoutResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/WorkoutResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/data/chats.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/chats.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Workout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Workout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_18_101245_create_workouts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_18_101245_create_workouts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PageSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PageSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/common_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/common_routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +279,10 @@
       <workItem from="1617006951889" duration="2508000" />
       <workItem from="1617033251929" duration="3615000" />
       <workItem from="1617186956234" duration="18000" />
-      <workItem from="1617208392050" duration="5191000" />
+      <workItem from="1617208392050" duration="6460000" />
+      <workItem from="1617292439327" duration="1202000" />
+      <workItem from="1617348157841" duration="648000" />
+      <workItem from="1617631102810" duration="3430000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>
@@ -542,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617038705810</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="add duration to workout table&#10;fix uploaded image not showing error on production">
+      <created>1617215931248</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1617215931248</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +558,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="pages implemented" />
     <MESSAGE value="commit before chat implementation" />
     <MESSAGE value="chat layout implement" />
     <MESSAGE value="weight api implemented" />
@@ -575,6 +582,7 @@
     <MESSAGE value="fix workout routine error&#10;fix subscription period issue" />
     <MESSAGE value="chatbot implemented" />
     <MESSAGE value="chatbot update" />
-    <option name="LAST_COMMIT_MESSAGE" value="chatbot update" />
+    <MESSAGE value="add duration to workout table&#10;fix uploaded image not showing error on production" />
+    <option name="LAST_COMMIT_MESSAGE" value="add duration to workout table&#10;fix uploaded image not showing error on production" />
   </component>
 </project>
