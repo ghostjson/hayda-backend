@@ -10,5 +10,5 @@ Route::post('register', [AuthController::class, 'register'])->name('auth.registe
 
 Route::middleware('auth')->group(function (){
     Route::get('user', [AuthController::class, 'getUser']);
-
 });
+

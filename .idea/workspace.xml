@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="">
+    <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="fix registration error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StatsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StatsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/auth_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/auth_routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/stats_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/stats_routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +281,16 @@
       <workItem from="1617208392050" duration="6460000" />
       <workItem from="1617292439327" duration="1202000" />
       <workItem from="1617348157841" duration="648000" />
-      <workItem from="1617631102810" duration="4706000" />
+      <workItem from="1617631102810" duration="5316000" />
+      <workItem from="1617880609692" duration="2176000" />
+      <workItem from="1617885857767" duration="20000" />
+      <workItem from="1618340558459" duration="1380000" />
+      <workItem from="1618489514432" duration="1060000" />
+      <workItem from="1618667160563" duration="2222000" />
+      <workItem from="1618906275455" duration="1433000" />
+      <workItem from="1618914828121" duration="1096000" />
+      <workItem from="1618912126662" duration="3731000" />
+      <workItem from="1618998460496" duration="4361000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>
@@ -552,15 +565,33 @@
       <option name="project" value="LOCAL" />
       <updated>1617635450422</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="fix registration error">
+      <created>1617639414473</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1617639414473</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="weight api implemented" />
     <MESSAGE value="weight api implemented 2" />
     <MESSAGE value="workout implemented" />
     <MESSAGE value="fix date format of nutition page" />
@@ -585,6 +616,7 @@
     <MESSAGE value="add duration to workout table&#10;fix uploaded image not showing error on production" />
     <MESSAGE value="1) Email suggestion on height fixed&#10;2) Workout routine reset button fixed&#10;3) Workout routine met goal implemented.&#10;4) About us image not showing error fixed.&#10;5) Blog not showing fixed." />
     <MESSAGE value="1) Workout routine reset button fixed&#10;2) Workout routine met goal implemented.&#10;3) About us image not showing error fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="1) Workout routine reset button fixed&#10;2) Workout routine met goal implemented.&#10;3) About us image not showing error fixed." />
+    <MESSAGE value="fix registration error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix registration error" />
   </component>
 </project>
