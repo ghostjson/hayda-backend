@@ -11,4 +11,8 @@ Route::middleware('admin.auth')->group(function (){
 });
 
 Route::get('', [BlogController::class, 'index']);
+Route::get('recent', [BlogController::class, 'getRecent3Blogs']);
+Route::get('categories', [BlogController::class, 'getBlogCategories']);
+Route::get('categories/{category}', [BlogController::class, 'getBlogsByCategory']);
 Route::get('{blog}', [BlogController::class, 'show']);
+

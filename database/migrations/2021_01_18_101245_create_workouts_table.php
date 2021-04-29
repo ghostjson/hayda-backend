@@ -20,8 +20,7 @@ class CreateWorkoutsTable extends Migration
             $table->json('dates');
 
             $table->text('duration')->nullable();
-
-            $table->json('met_goal')->default('[]');
+            $table->json('met_goal');
 
             $table->bigInteger('user_id');
 

@@ -62,4 +62,19 @@ class BlogController extends Controller
             return respond('Server Error', 500);
         }
     }
+
+    public function getRecent3Blogs(): \Illuminate\Http\Resources\Json\AnonymousResourceCollection
+    {
+        return BlogResource::collection(Blog::orderBy('id', 'desc')->take(3)->get());
+    }
+
+    public function getBlogCategories()
+    {
+        return Blog::select('category')->groupBy('category')->get();
+    }
+
+    public function getBlogsByCategory(string $category): \Illuminate\Http\Resources\Json\AnonymousResourceCollection
+    {
+        return BlogResource::collection(Blog::where('category', '=',$category)->get());
+    }
 }
