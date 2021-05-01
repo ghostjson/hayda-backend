@@ -15,6 +15,9 @@ Route::post('/search', [SearchController::class, 'search']);
 
 Route::middleware('admin.auth')->group(function () {
     Route::post('/file-upload', function (Request $request) {
-        return config('app.url') . Storage::url($request->file('file')->store('public'));
+        $file = $request->file('file');
+        $path =uniqid('', true). '.'. $file->getClientOriginalExtension();
+        Storage::disk('s3')->put($path, file_get_contents($file), 'public');
+        return 'https://hayda-web-app.s3.amazonaws.com/'.  $path;
     });
 });

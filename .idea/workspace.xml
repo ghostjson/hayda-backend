@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="added blog categories endpoint&#10;recent blog endpoint">
+    <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/common_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/common_routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +165,9 @@
       <path value="$PROJECT_DIR$/vendor/laravel/cashier" />
       <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
       <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-aws-s3-v3" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kCYGnsQAp7btLdn9X9fxF53b3e" />
@@ -294,6 +302,7 @@
       <workItem from="1619771494648" duration="1074000" />
       <workItem from="1619788748720" duration="2019000" />
       <workItem from="1619818677975" duration="4000" />
+      <workItem from="1619893023746" duration="4108000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>
@@ -589,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619718723377</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="workout routine fixed">
+      <created>1619893173732</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1619893173732</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +625,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix date format of nutition page" />
     <MESSAGE value="fix date format of nutrition page" />
     <MESSAGE value="page content implemented" />
     <MESSAGE value="footer added to page contents" />
@@ -634,6 +649,7 @@
     <MESSAGE value="fix registration error" />
     <MESSAGE value="add users section" />
     <MESSAGE value="added blog categories endpoint&#10;recent blog endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="added blog categories endpoint&#10;recent blog endpoint" />
+    <MESSAGE value="workout routine fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="workout routine fixed" />
   </component>
 </project>
