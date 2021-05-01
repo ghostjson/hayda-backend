@@ -22,6 +22,7 @@ class WorkoutController extends Controller
             $this->workout = Workout::create([
                 'meta' => '',
                 'dates' => '',
+                'met_goal' => '[]',
                 'user_id' => auth()->id()
             ]);
         }else{
