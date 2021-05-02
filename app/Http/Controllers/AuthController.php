@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\IsEmailExistRequest;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\SignupRequest;
 use App\Http\Resources\UserResource;
@@ -103,6 +104,14 @@ class AuthController extends Controller
     public function uploadImage()
     {
 
+    }
+
+    public function isEmailExist(IsEmailExistRequest $request){
+        if(User::where('email', $request->input('email'))->exists()){
+            return 'TRUE';
+        }else{
+            return 'FALSE';
+        }
     }
 
     protected function respondWithToken($token)

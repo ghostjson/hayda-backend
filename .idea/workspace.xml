@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/IsEmailExistRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/common_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/common_routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/auth_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/auth_routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +300,8 @@
       <workItem from="1619771494648" duration="1074000" />
       <workItem from="1619788748720" duration="2019000" />
       <workItem from="1619818677975" duration="4000" />
-      <workItem from="1619893023746" duration="4108000" />
+      <workItem from="1619893023746" duration="4938000" />
+      <workItem from="1619965796353" duration="2799000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>
@@ -605,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619893173732</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="fix file upload issue&#10;implemented s3">
+      <created>1619897738309</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1619897738309</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,7 +631,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix date format of nutrition page" />
     <MESSAGE value="page content implemented" />
     <MESSAGE value="footer added to page contents" />
     <MESSAGE value="stats implemented" />
@@ -650,6 +655,7 @@
     <MESSAGE value="add users section" />
     <MESSAGE value="added blog categories endpoint&#10;recent blog endpoint" />
     <MESSAGE value="workout routine fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="workout routine fixed" />
+    <MESSAGE value="fix file upload issue&#10;implemented s3" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix file upload issue&#10;implemented s3" />
   </component>
 </project>
