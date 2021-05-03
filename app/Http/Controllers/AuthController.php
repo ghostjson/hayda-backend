@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\IsEmailExistRequest;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\SignupRequest;
+use App\Http\Requests\UpdateProfileRequest;
 use App\Http\Resources\UserResource;
 use App\Models\Subscription;
 use App\Models\User;
@@ -38,6 +39,20 @@ class AuthController extends Controller
     {
         auth()->logout();
         return respond('Successfully logged out');
+    }
+
+    public function updateProfile(UpdateProfileRequest $request)
+    {
+        $user = auth()->user();
+        $user->zip_code = $request->input('zip_code');
+        $user->gender = $request->input('gender');
+        $user->height = $request->input('height');
+        $user->name = $request->input('name');
+        $user->weight = $request->input('weight');
+        $user->age = $request->input('age');
+        $user->save();
+
+        return new UserResource($user);
     }
 
 

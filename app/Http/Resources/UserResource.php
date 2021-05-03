@@ -10,6 +10,11 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @property mixed name
  * @property mixed role
  * @property mixed subscription
+ * @property mixed zip_code
+ * @property mixed weight
+ * @property mixed height
+ * @property mixed age
+ * @property mixed gender
  */
 class UserResource extends JsonResource
 {
@@ -26,7 +31,12 @@ class UserResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'role' => $this->role,
-            'subscription' => $this->subscription
+            'subscription' => $this->subscription,
+            'zip_code' => $this->zip_code,
+            'weight' => $this->weight,
+            'height' => $this->height,
+            'age' => $this->age,
+            'gender' => $this->gender,
         ];
     }
 }
