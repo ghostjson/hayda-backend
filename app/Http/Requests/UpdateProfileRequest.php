@@ -27,7 +27,6 @@ class UpdateProfileRequest extends FormRequest
             'age' => 'required',
             'gender' => 'required',
             'height' => 'required',
-            'name' => 'required',
             'weight' => 'required',
             'zip_code' => 'required'
         ];

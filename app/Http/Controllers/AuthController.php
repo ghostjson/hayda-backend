@@ -47,7 +47,6 @@ class AuthController extends Controller
         $user->zip_code = $request->input('zip_code');
         $user->gender = $request->input('gender');
         $user->height = $request->input('height');
-        $user->name = $request->input('name');
         $user->weight = $request->input('weight');
         $user->age = $request->input('age');
         $user->save();
