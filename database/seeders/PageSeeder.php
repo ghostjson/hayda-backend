@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Page;
 use App\Models\PageContent;
 use Illuminate\Database\Seeder;
 
@@ -38,6 +39,11 @@ class PageSeeder extends Seeder
         $social->name = 'social';
         $social->content = '{"facebook":"#","twitter":"#","google":"#","pininterest":"#","vimeo":"#","linkedin":"#","instagram":"#","youtube":"#","reddit":"#"}';
         $social->save();
+
+        $places = new PageContent();
+        $places->name = 'discover-places';
+        $places->content = '{"places":"Parks, Gyms, Hospitals, Food Stores"}';
+        $places->save();
 
     }
 }

@@ -67,6 +67,18 @@ class User extends Authenticatable implements JWTSubject
         $this->attributes['password'] = bcrypt($value);
     }
 
+    public function setWeightAttribute($value)
+    {
+        $weight = Weight::getWeight();
+        $weight["data"][0]->weight = $value;
+
+        Weight::updateOrCreate(
+            ['user_id' => auth()->id()],
+            ['data' => $weight["data"]]
+        );
+
+        $this->attributes['weight'] = $value;
+    }
 
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.
