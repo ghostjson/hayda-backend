@@ -11,6 +11,7 @@ use App\Models\Subscription;
 use App\Models\User;
 use App\Models\Weight;
 use App\Modules\StripeTrait;
+use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Log;
 
 class AuthController extends Controller
@@ -23,9 +24,11 @@ class AuthController extends Controller
         $this->middleware('auth')
             ->only(['logout']);
 
+        // stripe initialize
         $this->stripe_init();
     }
 
+    // login to a session
     public function login(LoginRequest $request)
     {
         if(!$token = auth()->attempt($request->validated())){
@@ -35,12 +38,14 @@ class AuthController extends Controller
         return $this->respondWithToken($token);
     }
 
+    // logout from session
     public function logout()
     {
         auth()->logout();
         return respond('Successfully logged out');
     }
 
+    // update profile
     public function updateProfile(UpdateProfileRequest $request)
     {
         $user = auth()->user();
@@ -50,6 +55,9 @@ class AuthController extends Controller
         $user->weight = $request->input('weight');
         $user->age = $request->input('age');
         $user->save();
+
+        // update weight in workout also
+        $user->updateUserWeight($user->weight);
 
         return new UserResource($user);
     }
@@ -96,7 +104,7 @@ class AuthController extends Controller
             Weight::create([
                 'user_id' => $user->id,
                 'goal_weight' => $user->weight - 20,
-                'data' => json_encode([])
+                'data' => json_encode([['weight' => $user->weight, 'date' => new Date()]])
             ]);
 
             // set $token
@@ -106,21 +114,21 @@ class AuthController extends Controller
             return $this->respondWithToken($token);
         }catch(\Exception $e){
             Log::error($e);
+            dd($e);
             return respond('Error in registration', 422);
         }
     }
 
-    public function getUser()
+    // return user
+    public function getUser(): UserResource
     {
         return new UserResource(auth()->user());
     }
 
-    public function uploadImage()
+
+    // check if the email exist
+    public function isEmailExist(IsEmailExistRequest $request): string
     {
-
-    }
-
-    public function isEmailExist(IsEmailExistRequest $request){
         if(User::where('email', $request->input('email'))->exists()){
             return 'TRUE';
         }else{
@@ -128,7 +136,8 @@ class AuthController extends Controller
         }
     }
 
-    protected function respondWithToken($token)
+    // token response
+    protected function respondWithToken($token): \Illuminate\Http\JsonResponse
     {
         return response()->json([
             'access_token' => $token,

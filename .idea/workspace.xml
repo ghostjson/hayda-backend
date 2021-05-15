@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="">
+    <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="update in weight">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UpdateProfileRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UpdateProfileRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Weight.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Weight.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,6 +303,20 @@
       <workItem from="1619893023746" duration="4938000" />
       <workItem from="1619965796353" duration="6876000" />
       <workItem from="1620022590160" duration="4974000" />
+      <workItem from="1620050714209" duration="235000" />
+      <workItem from="1620108903741" duration="647000" />
+      <workItem from="1620226606365" duration="39000" />
+      <workItem from="1620472540663" duration="1702000" />
+      <workItem from="1620490781820" duration="4807000" />
+      <workItem from="1620568980578" duration="1154000" />
+      <workItem from="1620738811572" duration="644000" />
+      <workItem from="1620749648292" duration="614000" />
+      <workItem from="1620907274168" duration="617000" />
+      <workItem from="1620924215035" duration="477000" />
+      <workItem from="1620973273598" duration="812000" />
+      <workItem from="1620993420916" duration="686000" />
+      <workItem from="1621069409188" duration="305000" />
+      <workItem from="1621081117519" duration="1685000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>
@@ -631,7 +647,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620033591690</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="&#10;update in weight&#10;update in page content places">
+      <created>1620498366353</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1620498366353</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +674,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="theme update" />
     <MESSAGE value="add secondary color" />
     <MESSAGE value="contact details updated" />
     <MESSAGE value="update authorization" />
@@ -676,6 +698,7 @@
     <MESSAGE value="email check endpoint added" />
     <MESSAGE value="update page seeder" />
     <MESSAGE value="update profile endpoint implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="update profile endpoint implemented" />
+    <MESSAGE value="&#10;update in weight&#10;update in page content places" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;update in weight&#10;update in page content places" />
   </component>
 </project>

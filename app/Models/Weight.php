@@ -29,9 +29,10 @@ class Weight extends Model
         );
     }
 
-    public static function getWeight()
+    public static function getWeight(int $user_id)
     {
-        $weightObj = Weight::where('user_id', auth()->id())->first();
+        $weightObj = Weight::where('user_id', $user_id)->first();
+
         return [
             'goal' => $weightObj->goal_weight,
             'data' => json_decode($weightObj->data)

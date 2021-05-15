@@ -67,9 +67,10 @@ class User extends Authenticatable implements JWTSubject
         $this->attributes['password'] = bcrypt($value);
     }
 
-    public function setWeightAttribute($value)
+    // update user's weight in workout
+    public function updateUserWeight($value)
     {
-        $weight = Weight::getWeight();
+        $weight = Weight::getWeight(auth()->id());
         $weight["data"][0]->weight = $value;
 
         Weight::updateOrCreate(
@@ -77,7 +78,6 @@ class User extends Authenticatable implements JWTSubject
             ['data' => $weight["data"]]
         );
 
-        $this->attributes['weight'] = $value;
     }
 
     /**
