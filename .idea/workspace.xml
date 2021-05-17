@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="update in weight">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_15_131918_add_priority_fields_to_health_hub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d5f9527-47c6-4712-8490-2033c74888ac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4d5f9527-47c6-4712-8490-2033c74888ac.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Weight.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Weight.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HealthHubController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HealthHubController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/HealthHub.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/HealthHub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/health_hub_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/health_hub_routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,7 +318,10 @@
       <workItem from="1620973273598" duration="812000" />
       <workItem from="1620993420916" duration="686000" />
       <workItem from="1621069409188" duration="305000" />
-      <workItem from="1621081117519" duration="1685000" />
+      <workItem from="1621081117519" duration="12714000" />
+      <workItem from="1621096496137" duration="23000" />
+      <workItem from="1621240241733" duration="2046000" />
+      <workItem from="1621247272670" duration="2026000" />
     </task>
     <task id="LOCAL-00001" summary="added healthhub api">
       <created>1605265261719</created>
@@ -654,7 +659,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620498366353</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Fix registration issue">
+      <created>1621082968668</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1621082968669</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,7 +686,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add secondary color" />
     <MESSAGE value="contact details updated" />
     <MESSAGE value="update authorization" />
     <MESSAGE value="terms page implemented" />
@@ -699,6 +710,7 @@
     <MESSAGE value="update page seeder" />
     <MESSAGE value="update profile endpoint implemented" />
     <MESSAGE value="&#10;update in weight&#10;update in page content places" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;update in weight&#10;update in page content places" />
+    <MESSAGE value="Fix registration issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix registration issue" />
   </component>
 </project>
