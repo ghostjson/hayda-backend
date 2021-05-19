@@ -22,7 +22,7 @@ class GoalsController extends Controller
 
     public function getWeight()
     {
-        return Weight::getWeight();
+        return Weight::getWeight(auth()->id());
     }
 
     public function addWeight(AddWeightRequest $request)
