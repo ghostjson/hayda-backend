@@ -19,14 +19,23 @@ class HealthHubController extends Controller
      */
     public function index(): ResourceCollection
     {
-        $health_hub =HealthHub::all()
+        $coupons_apps = HealthHub::where('category', '=', 'APPS')
+            ->orWhere('category', '=', 'COUPONS')
+            ->get()
+            ->groupBy('category');
+
+
+        $health_hub =HealthHub::where('category', '!=', 'COUPONS')
+            ->where('category', '!=', 'APPS')
+            ->get()
             ->sortBy('category')
-            ->groupBy('category') ;
+            ->groupBy('category');
+
 
         return HealthHubLinkResource::collection(
             $health_hub->map(function ($item, $key){
                 return $item->sortBy('caption');
-            })
+            })->merge($coupons_apps)
         );
     }
 
