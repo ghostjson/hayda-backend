@@ -22,7 +22,7 @@ class HealthHubController extends Controller
         return HealthHubLinkResource::collection(
             HealthHub::all()
                 ->sortBy('category')
-                ->sortBy('link_priority')
+//                ->sortBy('link_priority')
                 ->groupBy('category')
         );
     }

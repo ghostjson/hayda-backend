@@ -114,7 +114,6 @@ class AuthController extends Controller
             return $this->respondWithToken($token);
         }catch(\Exception $e){
             Log::error($e);
-            dd($e);
             return respond('Error in registration', 422);
         }
     }
