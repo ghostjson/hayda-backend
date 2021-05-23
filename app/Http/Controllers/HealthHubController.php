@@ -19,11 +19,14 @@ class HealthHubController extends Controller
      */
     public function index(): ResourceCollection
     {
+        $health_hub =HealthHub::all()
+            ->sortBy('category')
+            ->groupBy('category') ;
+
         return HealthHubLinkResource::collection(
-            HealthHub::all()
-                ->sortBy('category')
-//                ->sortBy('link_priority')
-                ->groupBy('category')
+            $health_hub->map(function ($item, $key){
+                return $item->sortBy('caption');
+            })
         );
     }
 
