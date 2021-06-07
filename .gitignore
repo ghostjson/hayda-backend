@@ -13,3 +13,5 @@ yarn-error.log
 chatbot/*
 chatbot/
 /chatbot/*
+/chatbot/Chatbot-0.0.1-SNAPSHOT.jar
+
