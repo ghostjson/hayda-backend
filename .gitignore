@@ -14,4 +14,7 @@ chatbot/*
 chatbot/
 /chatbot/*
 /chatbot/Chatbot-0.0.1-SNAPSHOT.jar
+/chatbot/chat.sh
+/chatbot/data/chats.json
+/chatbot/data/chats_bak.json
 
