@@ -16,7 +16,11 @@ class WorkoutController extends Controller
     {
         $this->middleware('auth');
 
-        $this->workout = Workout::where('user_id', auth()->id());
+        if (!is_null(auth()->id())){
+            $this->workout = Workout::where('user_id', auth()->id());
+        }else{
+            return respond("User is not exist", 401);
+        }
 
         if(!$this->workout->exists()){
             $this->workout = Workout::create([

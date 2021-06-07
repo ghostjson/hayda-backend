@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ad475065-4282-4918-be68-3bd03eec2eae" name="Default Changelist" comment="update in weight">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WorkoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WorkoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/data/chats.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/chats.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,35 +321,12 @@
       <workItem from="1621247272670" duration="4180000" />
       <workItem from="1621421810687" duration="2299000" />
       <workItem from="1621499084727" duration="14000" />
-      <workItem from="1621746750994" duration="636000" />
-    </task>
-    <task id="LOCAL-00003" summary="added blog CRUD">
-      <created>1605285089976</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1605285089976</updated>
-    </task>
-    <task id="LOCAL-00004" summary="authentication implemented">
-      <created>1606488831219</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1606488831219</updated>
-    </task>
-    <task id="LOCAL-00005" summary="registration implemented">
-      <created>1606571883536</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1606571883536</updated>
-    </task>
-    <task id="LOCAL-00006" summary="subscription implemented">
-      <created>1607182932302</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1607182932302</updated>
+      <workItem from="1621746750994" duration="4855000" />
+      <workItem from="1621755297034" duration="1363000" />
+      <workItem from="1621756755043" duration="23000" />
+      <workItem from="1622466436358" duration="624000" />
+      <workItem from="1622630692355" duration="55000" />
+      <workItem from="1623085752209" duration="665000" />
     </task>
     <task id="LOCAL-00007" summary="settings implemented">
       <created>1607254839290</created>
@@ -664,7 +643,35 @@
       <option name="project" value="LOCAL" />
       <updated>1621430863502</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="sort by healthhub category">
+      <created>1621750270294</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1621750270295</updated>
+    </task>
+    <task id="LOCAL-00053" summary="fix healthhub">
+      <created>1621752485048</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1621752485048</updated>
+    </task>
+    <task id="LOCAL-00054" summary="fix caption order">
+      <created>1621753597944</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1621753597944</updated>
+    </task>
+    <task id="LOCAL-00055" summary="fix healthhub order 2">
+      <created>1621756183691</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1621756183692</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -684,11 +691,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="terms page implemented" />
-    <MESSAGE value="add social icons" />
-    <MESSAGE value="Search page implemented" />
-    <MESSAGE value="Registration bug fixed" />
-    <MESSAGE value="add games and podcasts to the in the know section" />
     <MESSAGE value="our team section added to admin panel" />
     <MESSAGE value="fix subscription period issue" />
     <MESSAGE value="fix workout routine error&#10;fix subscription period issue" />
@@ -709,6 +711,11 @@
     <MESSAGE value="Fix registration issue" />
     <MESSAGE value="change order of health hub implemented" />
     <MESSAGE value="weight not showing issue solved" />
-    <option name="LAST_COMMIT_MESSAGE" value="weight not showing issue solved" />
+    <MESSAGE value="sort by healthhub category" />
+    <MESSAGE value="fix healthhub" />
+    <MESSAGE value="fix caption order" />
+    <MESSAGE value="fix order 2" />
+    <MESSAGE value="fix healthhub order 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix healthhub order 2" />
   </component>
 </project>
