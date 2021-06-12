@@ -48,7 +48,7 @@ class WorkoutController extends Controller
                 'met_goal' => $request->input('met_goal')
             ]);
 
-         return new WorkoutResource($this->workout);
+         return new WorkoutResource(Workout::where('user_id', auth()->id())->first());
     }
 
     public function reset()
