@@ -48,7 +48,7 @@ class WorkoutController extends Controller
                 'met_goal' => $request->input('met_goal')
             ]);
 
-         return new WorkoutResource(Workout::where('user_id', auth()->id())->first());
+         return new WorkoutResource($this->getWeightGoal());
     }
 
     public function reset()
@@ -60,7 +60,7 @@ class WorkoutController extends Controller
 
         $this->workout->save();
 
-        return new WorkoutResource($this->workout);
+        return new WorkoutResource($this->getWeightGoal());
     }
 
     public function setGoal(SetWorkoutGoalRequest $request)
@@ -70,5 +70,9 @@ class WorkoutController extends Controller
         ]);
 
         return new WorkoutResource($this->workout);
+    }
+
+    private function getWeightGoal(){
+       return Workout::where('user_id', auth()->id())->first();
     }
 }
