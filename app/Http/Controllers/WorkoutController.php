@@ -54,9 +54,9 @@ class WorkoutController extends Controller
     public function reset()
     {
         $this->workout->meta = '';
-        $this->workout->dates = '[]';
-        $this->workout->duration = '[]';
-        $this->workout->met_goal = '[]';
+        $this->workout->dates = [];
+        $this->workout->duration = [];
+        $this->workout->met_goal = [];
 
         $this->workout->save();
 
