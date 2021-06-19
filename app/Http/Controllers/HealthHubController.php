@@ -20,13 +20,13 @@ class HealthHubController extends Controller
     public function index(): ResourceCollection
     {
         $coupons_apps = HealthHub::where('category', '=', 'APPS AND LINKS')
-            ->orWhere('category', '=', 'COUPONS')
+            ->orWhere('category', '=', 'COUPONS AND DISCOUNTS')
             ->get()
             ->groupBy('category');
 
 
         $health_hub =HealthHub::where('category', '!=', 'COUPONS AND DISCOUNTS')
-            ->where('category', '!=', 'APPS')
+            ->where('category', '!=', 'APPS AND LINKS')
             ->get()
             ->sortBy('category')
             ->groupBy('category');
