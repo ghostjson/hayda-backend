@@ -20,7 +20,7 @@ class BlogController extends Controller
 
     public function index()
     {
-        return BlogResource::collection(Blog::all());
+        return BlogResource::collection(Blog::orderBy('created_at', 'DESC')->get());
     }
 
     public function create(BlogCreateRequest $request)
